@@ -1,20 +1,26 @@
 // Copyright 2022 by @kimhxsong
 // Difficulty: #Easy
 // Category: #Array
+#include "solved.h"
 
 #include <string>
 #include <unordered_map>
 #include <vector>
 
-using namespace std;
+using std::string;
+using std::unordered_map;
+using std::vector;
+
+#ifdef BEST
 
 // Sol-1.0 T=O(n), S=O(k)
 // where n is the number of copetitions, k is the number of teams
+// A better solution will be added tomorrow (May 2, 2022)
 string tournamentWinner(vector<vector<string>> competitions,
                         vector<int> results) {
   unordered_map<string, int> rank_board;
 
-  for (int i = 0; i < results.size(); i++) {
+  for (size_t i = 0; i < results.size(); i++) {
     string winner{competitions[i][!results[i]]};
     if (rank_board.find(winner) == rank_board.end()) {
       rank_board.insert({winner, 3});
@@ -35,3 +41,7 @@ string tournamentWinner(vector<vector<string>> competitions,
 
   return first_winner;
 }
+
+#else
+
+#endif  // BEST
