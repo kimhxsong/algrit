@@ -11,6 +11,9 @@ using std::vector;
 # define BEST
 
 // 0502
+string caesarCypherEncryptor(string str, int key);
+
+// 0502
 class LinkedList;
 LinkedList *removeDuplicatesFromLinkedList(LinkedList *linkedList);
 
