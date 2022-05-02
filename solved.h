@@ -7,7 +7,12 @@
 using std::string;
 using std::vector;
 
+
 # define BEST
+
+// 0502
+class LinkedList;
+LinkedList *removeDuplicatesFromLinkedList(LinkedList *linkedList);
 
 // 0501
 int nonConstructibleChange(vector<int> coins);
