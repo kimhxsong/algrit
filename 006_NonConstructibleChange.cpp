@@ -8,11 +8,44 @@
 #include <algorithm>
 #include <vector>
 
-using std::vector;
-using std::pow;
 using std::sort;
+using std::vector;
 
 #ifdef BEST
+
+// Sol-1.1 T=O(nlogn) | S=O(1) - where n is the number of coins
+int nonConstructibleChange(vector<int> coins) {
+  sort(coins.begin(), coins.end());
+
+  int maximumChange = 0;
+  for (int coin : coins) {
+    if (coin > maximumChange + 1)
+      break;
+
+    maximumChange += coin;
+  }  // Range-based for loop (since C++11)
+
+  return maximumChange + 1;
+}
+
+#else
+
+using std::pow;
+
+// Sol-1.0 T=O(nlogn) | S=O(1) - where n is the number of coins
+int nonConstructibleChange(vector<int> coins) {
+  sort(coins.begin(), coins.end());
+
+  int sumOfCoins = 0;
+  for (size_t i = 0; i < coins.size(); i++) {
+    if (coins[i] > sumOfCoins + 1)
+      break;
+
+    sumOfCoins += coins[i];
+  }
+
+  return sumOfCoins + 1;
+}
 
 // Sol-X T=O(2^n), S=O(2^n) - where n is the number of coins
 // Worst Answer... Approaching too complicated.
@@ -44,7 +77,5 @@ int nonConstructibleChange(vector<int> coins) {
   }
   return prev_change + 1;
 }
-
-#else
 
 #endif  // BEST

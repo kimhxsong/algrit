@@ -17,12 +17,14 @@ string caesarCypherEncryptor(string str, int key);
 class LinkedList;
 LinkedList *removeDuplicatesFromLinkedList(LinkedList *linkedList);
 
-// 0501
+// 0501 0502
 int nonConstructibleChange(vector<int> coins);
 
 // 0501 0502
 string tournamentWinner(vector<vector<string>> competitions,
                         vector<int> results);
+// Similar Question 1561. Maximum Number of Coins You Can Get
+// https://leetcode.com/problems/maximum-number-of-coins-you-can-get/
 
 // 0430
 vector<int> sortedSquaredArray(vector<int> array);
