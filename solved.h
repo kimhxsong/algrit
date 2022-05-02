@@ -20,7 +20,7 @@ LinkedList *removeDuplicatesFromLinkedList(LinkedList *linkedList);
 // 0501
 int nonConstructibleChange(vector<int> coins);
 
-// 0501
+// 0501 0502
 string tournamentWinner(vector<vector<string>> competitions,
                         vector<int> results);
 
