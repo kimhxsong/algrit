@@ -10,6 +10,9 @@ using std::vector;
 
 # define BEST
 
+// 0503
+string runLengthEncoding(string str);
+
 // 0502
 string caesarCypherEncryptor(string str, int key);
 
