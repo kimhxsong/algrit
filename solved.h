@@ -11,6 +11,9 @@ using std::vector;
 # define BEST
 
 // 0503
+bool generateDocument(string characters, string document);
+
+// 0503
 string runLengthEncoding(string str);
 
 // 0502
