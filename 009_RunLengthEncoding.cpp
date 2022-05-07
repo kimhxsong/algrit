@@ -27,7 +27,7 @@ string runLengthEncoding(string str) {
 	vector<char> code;
 	int	currentIndex = 0;
 
-	while (currentIndex < str.size()) {
+	while (currentIndex < static_cast<int>(str.size())) {
 		char alpha = str[currentIndex];
 		char num = '0' + getSequenceLength(str, &currentIndex);
 

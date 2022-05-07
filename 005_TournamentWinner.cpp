@@ -20,11 +20,11 @@ static const int kHomeTeamWon = 1;
 static void updateMatchScores(unordered_map<string, int>& matchScores,
                               const string& winningTeam,
                               int victoryPoints) {
-  if (matchScores.find(WinningTeam) == matchScores.end()) {
-    matchScores[WinningTeam] = 0;  // <=> matchScores.insert({WinningTeam, 0});
+  if (matchScores.find(winningTeam) == matchScores.end()) {
+    matchScores[winningTeam] = 0;  // <=> matchScores.insert({winningTeam, 0});
   }
 
-  matchScores[WinningTeam] += victoryPoints;
+  matchScores[winningTeam] += victoryPoints;
 }
 
 string tournamentWinner(vector<vector<string>> competitions,
@@ -34,10 +34,10 @@ string tournamentWinner(vector<vector<string>> competitions,
 
   for (size_t i = 0; i < results.size(); i++) {
     const vector<string>& competition = competitions[i];
-    string& homeTeam = competition[0];
-    string& awayTeam = competition[1];
+    const string& homeTeam = competition[0];
+    const string& awayTeam = competition[1];
     int result = results[i];
-    string& winningTeam = (result == kHomeTeamWon) ? homeTeam : awayTeam;
+    const string& winningTeam = (result == kHomeTeamWon) ? homeTeam : awayTeam;
 
     updateMatchScores(matchScores, winningTeam, 3);
 
@@ -77,7 +77,5 @@ string tournamentWinner(vector<vector<string>> competitions,
 
   return first_winner;
 }
-
-#else
 
 #endif  // BEST
