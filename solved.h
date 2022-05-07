@@ -10,6 +10,9 @@ using std::vector;
 
 # define BEST
 
+// 0507
+int firstNonRepeatingCharacter(string string);
+
 // 0503
 bool generateDocument(string characters, string document);
 
