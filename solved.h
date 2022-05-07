@@ -11,6 +11,9 @@ using std::vector;
 # define BEST
 
 // 0507
+vector<int> selectionSort(vector<int> array);
+
+// 0507
 vector<int> insertionSort(vector<int> array);
 
 // 0507
