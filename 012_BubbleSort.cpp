@@ -7,7 +7,7 @@
 
 using namespace std;
 
-#ifdef 1
+#if 1
 
 // Sol-1.1
 // Best: T=O(n) | S=O(1)
@@ -22,7 +22,8 @@ vector<int> bubbleSort(vector<int> array) {
   int counter = 0;
   while (!bIsSorted) {
     bIsSorted = true;
-    for (int idx = 0; idx < array.size() - 1 - counter; idx++) {
+    for (int idx = 0; idx < static_cast<int>(array.size()) - 1 - counter;
+         idx++) {
       if (array[idx] > array[idx + 1]) {
         swap(array[idx], array[idx + 1]);
         bIsSorted = false;
