@@ -10,6 +10,9 @@ using std::vector;
 
 # define BEST
 
+// 0509
+int getNthFib(int n);
+
 // 0507
 vector<int> selectionSort(vector<int> array);
 
