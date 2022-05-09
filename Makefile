@@ -3,7 +3,7 @@ GTEST_PREFIX := $(shell brew --prefix googletest)
 NAME = test
 
 CC = c++
-CXXFLAGS = -g3 -Wall -Wextra -Werror -std=c++11 -mmacosx-version-min=12.0
+CXXFLAGS = -g3 -Wall -Wextra -Werror -std=c++17 -mmacosx-version-min=12.0
 
 INCLUDES = -I $(GTEST_PREFIX)/include
 LDFLAGS = -L $(GTEST_PREFIX)/lib -lgtest

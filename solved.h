@@ -11,6 +11,9 @@ using std::vector;
 # define BEST
 
 // 0509
+int productSum(vector<any> array, int depth = 1);
+
+// 0509
 int getNthFib(int n);
 
 // 0507
