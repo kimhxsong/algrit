@@ -10,6 +10,9 @@ using std::vector;
 
 # define BEST
 
+// 0510
+int binarySearch(vector<int> array, int target);
+
 // 0509
 int productSum(vector<any> array, int depth = 1);
 
