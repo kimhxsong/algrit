@@ -3,18 +3,21 @@
 
 #include <string>
 #include <vector>
+#include <any>
 
-using std::string;
-using std::vector;
+using namespace std;
 
 
 # define BEST
 
 // 0510
+vector<int> findThreeLargestNumbers(vector<int> array);
+
+// 0510
 int binarySearch(vector<int> array, int target);
 
 // 0509
-int productSum(vector<any> array, int depth = 1);
+int productSum(vector<any> array, int depth);
 
 // 0509
 int getNthFib(int n);
