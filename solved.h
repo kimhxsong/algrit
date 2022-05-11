@@ -10,6 +10,10 @@ using namespace std;
 
 # define BEST
 
+// 0511
+class BinaryTree;
+vector<int> branchSums(BinaryTree *root);
+
 // 0510
 vector<int> findThreeLargestNumbers(vector<int> array);
 
