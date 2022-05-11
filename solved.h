@@ -12,6 +12,10 @@ using namespace std;
 
 // 0511
 class BinaryTree;
+int nodeDepths(BinaryTree *root);
+
+// 0511
+class BinaryTree;
 vector<int> branchSums(BinaryTree *root);
 
 // 0510
