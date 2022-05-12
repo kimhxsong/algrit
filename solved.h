@@ -10,6 +10,10 @@ using namespace std;
 
 # define BEST
 
+// 0512
+class BST;
+int findClosestValueInBst(BST *tree, int target);
+
 // 0511
 class BinaryTree;
 int nodeDepths(BinaryTree *root);
