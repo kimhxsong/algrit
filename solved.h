@@ -11,6 +11,9 @@ using namespace std;
 # define BEST
 
 // 0512
+#include "022_DepthFirstSearch.hpp"  // class Node {...};
+
+// 0512
 class BST;
 int findClosestValueInBst(BST *tree, int target);
 
