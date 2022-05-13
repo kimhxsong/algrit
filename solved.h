@@ -10,6 +10,9 @@ using namespace std;
 
 # define BEST
 
+// 0513
+int minimumWaitingTime(vector<int> queries);
+
 // 0512
 #include "022_DepthFirstSearch.hpp"  // class Node {...};
 
