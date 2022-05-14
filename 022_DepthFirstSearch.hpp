@@ -12,6 +12,8 @@ using namespace std;
 // Feel free to add new properties
 // and methods to the class.
 
+namespace {
+
 class Node {
 public:
   string name;
@@ -27,6 +29,8 @@ public:
     return this;
   }
 };
+
+}
 
 // Sol-1 Time=O(v + e) time | Space=O(v) - v is the number of vertices and
 // is the number of edges
