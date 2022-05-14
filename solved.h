@@ -11,6 +11,10 @@ using namespace std;
 # define BEST
 
 // 0514
+int tandemBicycle(vector<int> redShirtSpeeds, vector<int> blueShirtSpeeds,
+                  bool fastest);
+
+// 0514
 bool classPhotos(vector<int> redShirtHeights, vector<int> blueShirtHeights);
 
 // 0513
