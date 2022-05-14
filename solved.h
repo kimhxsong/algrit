@@ -10,6 +10,9 @@ using namespace std;
 
 # define BEST
 
+// 0514
+bool classPhotos(vector<int> redShirtHeights, vector<int> blueShirtHeights);
+
 // 0513
 int minimumWaitingTime(vector<int> queries);
 
